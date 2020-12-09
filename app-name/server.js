@@ -7,13 +7,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
 const path = require("path");
-
 
 app.use('/', express.static(
   path.join(__dirname, '../build'))
@@ -22,6 +16,5 @@ app.use('/', express.static(
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/index.html'))
 })
-
 
 module.exports = app;
