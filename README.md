@@ -9,7 +9,7 @@ This aims to be the bare minimum required to run a React app on a cloud server.
 ## Available Scripts
 
 In the project directory, you can run:
-
+### `cd app-name`
 ### `npm start`
 
 Runs the app in the development mode.\
